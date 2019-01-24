@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TimeSheet</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.23.0/moment.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="trainhw.css" text="text/css">
+
+</head>
+
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4"><strong>Train Schedule</strong></h1>
+            <p class="lead">This will allow you to to track and schedule train times with ease!</p>
+        </div>
+    </div>
+
+
+    <!-- Holds table -->
+    <table class="table theTable" id="theTable">
+        <thead>
+            <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (mins)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- new Trains here -->
+        </tbody>
+    </table>
+
+
+
+    <div class="row fix marg">
+        <div class="col-lg-12">
+            <div class="card card-default">
+                <div class="card-header train-title">
+                    Add Train
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="train-name">Train Name</label>
+                            <input class="form-control" id="train-name" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="destination">Destination</label>
+                            <input class="form-control" id="destination" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="first-train-time">First Train Time (HH:MM)</label>
+                            <input class="form-control" id="first-train-time" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="frequency">Frequency (How often does the train arrive in minutes?)</label>
+                            <input class="form-control" id="frequency" type="number">
+                        </div>
+                        <button class="btn btn-primary" id="train-button" type="submit">Submit!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="trainhw.css"></script>
+</body>
+
+</html>

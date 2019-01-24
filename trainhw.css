@@ -1,0 +1,8 @@
+table.theTable {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div.row.fix.marg {
+    margin-right: 40px;
+    margin-left: 40px;
